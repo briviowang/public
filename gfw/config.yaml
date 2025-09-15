@@ -155,7 +155,6 @@ rules:
   - DOMAIN-SUFFIX,.npmjs.com,main-proxy
   - RULE-SET,my-proxy,main-proxy
   - RULE-SET,my-direct,DIRECT
-  - RULE-SET,pingyang-in-public,pingyang-in-public
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
