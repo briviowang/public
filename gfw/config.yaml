@@ -115,21 +115,21 @@ proxy-groups:
   - {"name": "free-search", "type": "url-test", "filter": "newpac-加拿大", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "nodefree", "type": "url-test", "filter": "subs-", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
 rule-providers:
-  apple: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
-  direct: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt", "type": "http", "path": "./ruleset/direct.yaml", "behavior": "domain", "interval": 86400}
-  applications: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt", "type": "http", "path": "./ruleset/applications.yaml", "behavior": "classical", "interval": 86400}
-  tld-not-cn: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt", "type": "http", "path": "./ruleset/tld-not-cn.yaml", "behavior": "domain", "interval": 86400}
-  cncidr: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt", "type": "http", "path": "./ruleset/cncidr.yaml", "behavior": "ipcidr", "interval": 86400}
-  lancidr: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt", "type": "http", "path": "./ruleset/lancidr.yaml", "behavior": "ipcidr", "interval": 86400}
-  my-direct: {"url": "https://cdn.jsdelivr.net/gh/briviowang/public@main/clash/rules/direct.yaml", "type": "http", "path": "./ruleset/my-direct.yaml", "behavior": "classical", "interval": 86400}
-  google: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt", "type": "http", "path": "./ruleset/google.yaml", "behavior": "domain", "interval": 86400}
-  telegramcidr: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt", "type": "http", "path": "./ruleset/telegramcidr.yaml", "behavior": "ipcidr", "interval": 86400}
-  reject: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt", "type": "http", "path": "./ruleset/reject.yaml", "behavior": "domain", "interval": 86400}
-  my-proxy: {"url": "https://cdn.jsdelivr.net/gh/briviowang/public@main/clash/rules/proxy.yaml", "type": "http", "path": "./ruleset/my-proxy.yaml", "behavior": "classical", "interval": 86400}
-  gfw: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt", "type": "http", "path": "./ruleset/gfw.yaml", "behavior": "domain", "interval": 86400}
-  proxy: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt", "type": "http", "path": "./ruleset/proxy.yaml", "behavior": "domain", "interval": 86400}
-  private: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt", "type": "http", "path": "./ruleset/private.yaml", "behavior": "domain", "interval": 86400}
-  icloud: {"url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt", "type": "http", "path": "./ruleset/icloud.yaml", "behavior": "domain", "interval": 86400}
+  apple: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/apple.yaml", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
+  direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/direct.yaml", "behavior": "domain", "interval": 86400}
+  applications: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/applications.yaml", "type": "http", "path": "./ruleset/applications.yaml", "behavior": "classical", "interval": 86400}
+  tld-not-cn: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/tld-not-cn.yaml", "type": "http", "path": "./ruleset/tld-not-cn.yaml", "behavior": "domain", "interval": 86400}
+  cncidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/cncidr.yaml", "type": "http", "path": "./ruleset/cncidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  lancidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/lancidr.yaml", "type": "http", "path": "./ruleset/lancidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  my-direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/my-direct.yaml", "behavior": "classical", "interval": 86400}
+  google: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/google.yaml", "type": "http", "path": "./ruleset/google.yaml", "behavior": "domain", "interval": 86400}
+  telegramcidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/telegramcidr.yaml", "type": "http", "path": "./ruleset/telegramcidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  reject: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/reject.yaml", "type": "http", "path": "./ruleset/reject.yaml", "behavior": "domain", "interval": 86400}
+  my-proxy: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/proxy.yaml", "type": "http", "path": "./ruleset/my-proxy.yaml", "behavior": "classical", "interval": 86400}
+  gfw: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/gfw.yaml", "type": "http", "path": "./ruleset/gfw.yaml", "behavior": "domain", "interval": 86400}
+  proxy: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/proxy.yaml", "type": "http", "path": "./ruleset/proxy.yaml", "behavior": "domain", "interval": 86400}
+  private: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/private.yaml", "type": "http", "path": "./ruleset/private.yaml", "behavior": "domain", "interval": 86400}
+  icloud: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/icloud.yaml", "type": "http", "path": "./ruleset/icloud.yaml", "behavior": "domain", "interval": 86400}
 rules:
   - DOMAIN-SUFFIX,gfw.report,ip-limit
   - DOMAIN-SUFFIX,stackoverflow.com,ip-limit

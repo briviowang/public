@@ -1,0 +1,23 @@
+payload:
+  - DOMAIN-SUFFIX,adobe.io
+  - DOMAIN-SUFFIX,adobelogin.com
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,bfzypic.com
+  - DOMAIN-SUFFIX,cursor.sh
+  - DOMAIN-SUFFIX,dandanzan.me
+  - DOMAIN-SUFFIX,dingtalk.com
+  - DOMAIN-SUFFIX,eyh.cn
+  - DOMAIN-SUFFIX,flares.cloud
+  - DOMAIN-SUFFIX,kali.download
+  - DOMAIN-SUFFIX,kali.org
+  - DOMAIN-SUFFIX,lo
+  - DOMAIN-SUFFIX,manwei.me
+  - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,okzy.xyz
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tencent.com
+  - DOMAIN-SUFFIX,tsingverse.com
+  - DOMAIN-SUFFIX,zed.dev
+  - IP-CIDR,10.32.0.1/16
+  - PROCESS-NAME,ping
+  - PROCESS-NAME,ping.exe
