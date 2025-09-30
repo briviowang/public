@@ -51,9 +51,9 @@ proxies:
 
 proxy-groups:
   - {"name": "main-proxy", "type": "select", "proxies": ["newpac","cf-auto", "cf-ip","all"]}
-  - {"name": "cf-ip", "type": "url-test", "filter": "cf-ip", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "newpac", "type": "url-test", "exclude-filter": "香港", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "cf-auto", "type": "url-test", "filter": "cf-auto", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+  - {"name": "cf-ip", "type": "url-test", "filter": "cf-ip", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "all", "type": "url-test", "filter": "newpac|cf-auto|cf-ip|subs-", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
 rule-providers:
   apple: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/apple.yaml", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
