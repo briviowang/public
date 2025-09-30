@@ -48,10 +48,10 @@ proxies:
 
 proxy-groups:
   - {"name": "main-proxy", "type": "select", "proxies": ["cf-proxy", "ip-limit", "cf-trojan","free"]}
-  - {"name": "free", "type": "url-test", "filter": "newpac|cf-trojan|cf-proxy|subs-", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "cf-proxy", "type": "url-test", "filter": "cf-proxy", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "ip-limit", "type": "url-test", "exclude-filter": "香港", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "cf-trojan", "type": "url-test", "filter": "cf-trojan", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+  - {"name": "free", "type": "url-test", "filter": "newpac|cf-trojan|cf-proxy|subs-", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
 rule-providers:
   apple: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/apple.yaml", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
   direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/direct.yaml", "behavior": "domain", "interval": 86400}
