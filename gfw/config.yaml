@@ -43,7 +43,6 @@ rule-providers:
   private: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/private.yaml", "type": "http", "path": "./ruleset/private.yaml", "behavior": "domain", "interval": 86400}
   icloud: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/icloud.yaml", "type": "http", "path": "./ruleset/icloud.yaml", "behavior": "domain", "interval": 86400}
 rules:
-  - DOMAIN-SUFFIX,steamunlocked.net,cf-ip
   - DOMAIN-SUFFIX,jitpack.io,main-proxy
   - DOMAIN-SUFFIX,flutter-io.cn,main-proxy
   - DOMAIN-SUFFIX,v2ex.com,main-proxy
