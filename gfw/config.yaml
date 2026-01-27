@@ -25,7 +25,7 @@ proxies:
 proxy-groups:
   - {"name": "main-proxy", "type": "select", "proxies": ["newpac","all"]}
   - {"name": "newpac", "type": "url-test", "exclude-filter": "香港", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
-  - {"name": "all", "type": "url-test", "filter": "newpac|cf-auto|cf-ip|subs-", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+  - {"name": "all", "type": "url-test", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
 rule-providers:
   apple: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/apple.yaml", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
   direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/direct.yaml", "behavior": "domain", "interval": 86400}
