@@ -1,0 +1,87 @@
+dns: {"enable": true, "enhanced-mode": "fake-ip", "fake-ip-filter": ["+.msftconnecttest.com", "+.msftncsi.com"], "fake-ip-range": "198.18.0.1/16", "ipv6": false, "listen": "0.0.0.0:1053", "nameserver": ["114.114.114.114", "223.5.5.5", "8.8.8.8"]}
+experimental: {"ignore-resolve-fail": true}
+global-client-fingerprint: chrome
+ipv6: false
+listeners:
+  - {"name": "http-in-1", "type": "mixed", "port": 1081, "listen": "127.0.0.1", "users": [{"password": "root", "username": "root"}]}
+log-level: info
+mode: Rule
+proxies:
+  - {"name": "newpac---1", "type": "anytls", "server": "tw.399403.xyz", "port": 8443, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac---3", "type": "anytls", "server": "fan3.394615.xyz", "port": 8443, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac--法国法兰西岛巴黎-4", "type": "tuic", "server": "62.210.10.113", "port": 33998, "alpn": ["h3"], "congestion-controller": "bbr", "password": "dongtaiwang.com", "reduce-rtt": true, "skip-cert-verify": true, "sni": "bing.com", "udp-relay-mode": "native", "uuid": "909212b8-5d67-4532-885e-7a6b5e724ab8"}
+  - {"name": "newpac--法国法兰西岛巴黎-7", "type": "anytls", "server": "62.210.11.74", "port": 8443, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac--南非豪登省约翰内斯堡-1", "type": "anytls", "server": "45.221.98.14", "port": 59901, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac--南非豪登省约翰内斯堡-2", "type": "mieru", "server": "45.221.98.11", "port": 28866, "multiplexing": "MULTIPLEXING_LOW", "password": "dongtaiwang.com", "transport": "TCP", "username": "dongtaiwang.com"}
+  - {"name": "newpac--法国法兰西岛巴黎-1", "type": "anytls", "server": "62.210.11.74", "port": 8443, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac---2", "type": "anytls", "server": "fan2.856098.xyz", "port": 8443, "alpn": ["h2", "http/1.1"], "client-fingerprint": "chrome", "idle-session-check-interval": 30, "idle-session-timeout": 30, "min-idle-session": 0, "password": "dongtaiwang.com", "skip-cert-verify": true, "udp": true}
+  - {"name": "newpac--美国纽约州水牛城-1", "type": "mieru", "server": "157.254.223.48", "port": 33990, "password": "dongtaiwang.com", "transport": "TCP", "username": "dongtaiwang.com"}
+  - {"name": "newpac--美国纽约州水牛城-2", "type": "hysteria2", "server": "157.254.223.43", "port": "27921", "down": "55 mbps", "password": "dongtaiwang.com", "ports": "28000-29000", "protocol": "udp", "skip-cert-verify": true, "sni": "apple.com", "up": "11 mbps"}
+  - {"name": "newpac--法国法兰西岛巴黎-2", "type": "tuic", "server": "62.210.10.113", "port": 33998, "alpn": ["h3"], "congestion-controller": "bbr", "password": "dongtaiwang.com", "reduce-rtt": true, "skip-cert-verify": true, "sni": "bing.com", "udp-relay-mode": "native", "uuid": "909212b8-5d67-4532-885e-7a6b5e724ab8"}
+  - {"name": "newpac--法国法兰西岛巴黎-3", "type": "hysteria2", "server": "62.210.124.146", "port": "22000", "down": "55 mbps", "password": "dongtaiwang.com", "protocol": "udp", "skip-cert-verify": true, "sni": "www.microsoft.com", "up": "11 mbps"}
+  - {"name": "newpac--德国黑森州法兰克福-1", "type": "tuic", "server": "89.144.35.231", "port": 33457, "alpn": ["h3"], "congestion-controller": "bbr", "password": "dongtaiwang.com", "reduce-rtt": true, "skip-cert-verify": true, "sni": "apple.com", "udp-relay-mode": "native", "uuid": "66d37a65-7f6f-4e7c-a0f6-163bd917756a"}
+  - {"name": "newpac--美国得克萨斯州达拉斯-1", "type": "hysteria", "server": "98.142.247.21", "port": "39228", "alpn": ["h3"], "auth-str": "dongtaiwang.com", "down": "55 Mbps", "protocol": "udp", "skip-cert-verify": true, "sni": "apple.com", "up": "11 Mbps"}
+  - {"name": "cf-ss-1", "type": "ss", "server": "cf.zhetengsha.eu.org", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-2", "type": "ss", "server": "mfa.gov.ua", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-3", "type": "ss", "server": "saas.sin.fan", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-4", "type": "ss", "server": "store.ubi.com", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-5", "type": "ss", "server": "cf.130519.xyz", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-6", "type": "ss", "server": "cf.008500.xyz", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-7", "type": "ss", "server": "cf.090227.xyz", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-8", "type": "ss", "server": "cf.877774.xyz", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-9", "type": "ss", "server": "cdns.doon.eu.org", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+  - {"name": "cf-ss-10", "type": "ss", "server": "sub.danfeng.eu.org", "port": 443, "cipher": "none", "password": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "plugin": "v2ray-plugin", "plugin-opts": {"mode": "websocket", "host": "260130-es9.pages.dev", "path": "/5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4/?ed=2560", "tls": true, "peer": "260130-es9.pages.dev", "mux": false, "allowInsecure": true}, "client-fingerprint": "chrome"}
+
+proxy-groups:
+  - {"name": "main-proxy", "type": "select", "proxies": ["newpac","cf-ss","all"]}
+  - {"name": "newpac", "type": "url-test", "exclude-filter": "香港", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+  - {"name": "cf-ss", "type": "url-test", "exclude-filter": "cf-ss", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+  - {"name": "all", "type": "url-test", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
+rule-providers:
+  apple: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/apple.yaml", "type": "http", "path": "./ruleset/apple.yaml", "behavior": "domain", "interval": 86400}
+  direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/direct.yaml", "behavior": "domain", "interval": 86400}
+  applications: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/applications.yaml", "type": "http", "path": "./ruleset/applications.yaml", "behavior": "classical", "interval": 86400}
+  tld-not-cn: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/tld-not-cn.yaml", "type": "http", "path": "./ruleset/tld-not-cn.yaml", "behavior": "domain", "interval": 86400}
+  cncidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/cncidr.yaml", "type": "http", "path": "./ruleset/cncidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  lancidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/lancidr.yaml", "type": "http", "path": "./ruleset/lancidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  my-direct: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/direct.yaml", "type": "http", "path": "./ruleset/my-direct.yaml", "behavior": "classical", "interval": 86400}
+  google: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/google.yaml", "type": "http", "path": "./ruleset/google.yaml", "behavior": "domain", "interval": 86400}
+  telegramcidr: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/telegramcidr.yaml", "type": "http", "path": "./ruleset/telegramcidr.yaml", "behavior": "ipcidr", "interval": 86400}
+  reject: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/reject.yaml", "type": "http", "path": "./ruleset/reject.yaml", "behavior": "domain", "interval": 86400}
+  my-proxy: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/proxy.yaml", "type": "http", "path": "./ruleset/my-proxy.yaml", "behavior": "classical", "interval": 86400}
+  gfw: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/gfw.yaml", "type": "http", "path": "./ruleset/gfw.yaml", "behavior": "domain", "interval": 86400}
+  proxy: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/proxy.yaml", "type": "http", "path": "./ruleset/proxy.yaml", "behavior": "domain", "interval": 86400}
+  private: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/private.yaml", "type": "http", "path": "./ruleset/private.yaml", "behavior": "domain", "interval": 86400}
+  icloud: {"url": "https://gh-proxy.com/https://raw.githubusercontent.com/briviowang/public/refs/heads/main/gfw/ruleset/icloud.yaml", "type": "http", "path": "./ruleset/icloud.yaml", "behavior": "domain", "interval": 86400}
+rules:
+  - DOMAIN-SUFFIX,jitpack.io,main-proxy
+  - DOMAIN-SUFFIX,flutter-io.cn,main-proxy
+  - DOMAIN-SUFFIX,v2ex.com,main-proxy
+  - DOMAIN-SUFFIX,.apache.org,main-proxy
+  - DOMAIN-SUFFIX,.caddyserver.com,main-proxy
+  - DOMAIN-SUFFIX,.npmjs.com,main-proxy
+  - DOMAIN-SUFFIX,alibabacloud.com,DIRECT
+  - DOMAIN-SUFFIX,gov.cn,DIRECT
+  - DOMAIN-SUFFIX,autodesk.com,DIRECT
+  - DOMAIN-SUFFIX,getui.com,DIRECT
+  - RULE-SET,my-direct,DIRECT
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,my-proxy,main-proxy
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,DIRECT
+  - RULE-SET,proxy,main-proxy
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,main-proxy
+  - GEOIP,CN,DIRECT
+  - GEOIP,LAN,DIRECT
+  - MATCH,main-proxy
+tun: {"auto-detect-interface": true, "auto-route": true, "dns-hijack": ["any:53", "tcp://any:53"], "enable": false, "stack": "system"}
+unified-delay: true
+mixed-port: 1080
