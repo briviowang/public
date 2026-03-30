@@ -32,7 +32,7 @@ proxies:
   - {"name": "cf-kkk-6", "type": "vless", "server": "yg13.ygkkk.dpdns.org", "port": 2096, "uuid": "5318ebe1-41e9-4d78-bda5-3d60c6a0cfe4", "udp": false, "tls": true, "network": "ws", "servername": "260202-kkk.pages.dev", "ws-opts": {"path": "/?ed=2560", "headers": {"Host": "260202-kkk.pages.dev"}}}
 
 proxy-groups:
-  - {"name": "main-proxy", "type": "select", "proxies": ["newpac","cf-ss","cf-kkk","all"]}
+  - {"name": "main-proxy", "type": "select", "proxies": ["all","newpac","cf-ss","cf-kkk"]}
   - {"name": "newpac", "type": "url-test", "exclude-filter": "香港", "filter": "newpac", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "cf-ss", "type": "url-test", "filter": "cf-ss", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
   - {"name": "cf-kkk", "type": "url-test", "filter": "cf-kkk", "include-all": true, "interval": 15, "url": "http://www.gstatic.com/generate_204"}
